@@ -1,13 +1,22 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const arrayOfLetters = word.split('');
+  const reverseLetters = arrayOfLetters.reverse()
+  const reverseString  = reverseLetters.join('')
+
+  if (word == reverseString){
+
+    return true
+} else {
+  return false
+}
 }
 
 /* 
-  Add your pseudocode here
+   Function isPalindrome has to take a string as a parements. If the string is palindrom, the function should retur true. If not then the function should return false
 */
 
 /*
-  Add written explanation of your solution here
+  The function takes the word and splits each letter into an array, then the array is reversed
 */
 
 // You can run `node index.js` to view these console logs
